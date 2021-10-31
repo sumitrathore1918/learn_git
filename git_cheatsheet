@@ -1,0 +1,63 @@
+---->Git:-
+	Git is a Source Code Management(SCM) Tool.It is also called as Distributed Version Control System(DVCS).
+	It is developed by Linus Torvald in 2005.
+
+----> Installing Git on Linux:-
+	sudo yum -y install git
+		or
+	sudo apt-get install git
+
+----> To check the version of git installed:-
+	git --version
+
+----> Initialising a Local Git repository:-
+	git init [directory_name]
+		or
+	git init (By default it will initalise the current directory as git repository).
+	Note:- Directory is added with .git folder where all configuration file related to repo is available and it tracks
+	and manage repository.
+
+---->  To Configure or Add "username and useremail" for repository:-
+	1) For a particular repository:-
+		git config user.name "Username"
+		git config user.email "username@xyz.com"
+
+	2) For adding globally so that every repo should have same configuration for usetname and useremail:-
+		git config --global user.name "Username"
+		git config --global user.email "username@xyz.com"
+
+----> To check the Configuration of git repo:-
+	git config --list
+
+----> To add local repo to central repo:-
+	git remote add origin <centralgit url>
+
+----> To check status of git repo:-
+	git status
+
+----> To add workspace data into staging area:-
+	git add .
+		or
+	git add [file_name or directory_name]
+
+----> To commit code in git repo:-
+	git commit -m "commit message" .
+		or
+	git commit -m "coomit message" [file_name or directory_name]
+
+----> To check log file or commit details:-
+	git log
+
+----> To show particular commit:-
+	git show <commit ID>
+
+----> To set branch name for repo:-
+	git branch -M [branch_name]
+
+----> To push local repo to centralised repo:-
+	git push -u origin [branch_name]
+
+----> To Pull centralised repo to local repo:-
+	git pull -u origin [branch_name]
+
+---->
