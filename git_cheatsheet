@@ -60,4 +60,75 @@
 ----> To Pull centralised repo to local repo:-
 	git pull -u origin [branch_name]
 
----->
+----> To learn about .gitignore:-
+	If one want to ignore particular format of file one should add it in
+	.gitignore file and then add it to staging area and commmit the change.
+		git add .gitignore
+		git commit -m "added gitignore file" .gitignore
+
+----> To see n number of commits:-
+	git log -n
+
+----> To see commits in oneline:-
+	git log --oneline
+
+----> To see list of available Branches:-
+	git branch
+	Note:- * before name of branch will show that it is current working branch.
+
+----> Create a new branch:-
+	git branch [branch_name]
+
+----> To switch to a particular branch:-
+	git checkout <branch to be switched>
+
+----> To delete a particular Branch:-
+	git branch -d [branch_name]
+
+----> To merge a branch:-
+	git merge <branch_name>
+
+----> To stash an item (Only applies to modifiedfile):-
+	git stash
+
+----> To see the list of item in stash:-
+	git stash list
+
+----> To apply stashed Items:-
+	git stash apply stash@{0}
+
+----> To clear the stash items:-
+	git stash clear
+
+----> To reset Staging Area:-
+	git reset <filename>
+
+----> To reset the change from both staging area and working directory at a time:-
+	git reset --hard
+
+----> To revert or undo an existing commit:-
+	git revert <commit_ID>
+
+----> To remove untracked file:-
+	git clean -n (dry run)
+		or
+	git clean -f (forcefully)
+
+----> To apply tag to a specific commit:-
+	git tag -a <tagname> -m <message> <commit_ID>
+
+----> To see the list of tags :-
+	git tag
+
+----> To see particular commit content by using tag:-
+	git show <tag_name>
+
+----> To delete a tag:-
+	git tag -d <tag_name>
+
+---->To clone a git repo:-
+	git clone <url of centralised git repo>
+
+------------------------------------------------------------------------------------------------------------
+
+
